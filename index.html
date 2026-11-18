@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Nazarita · Pastelería-Panadería en Granada | Dulces con historia</title>
+<meta name="description" content="Pastelería-Panadería La Nazarita, en C. Obispo Hurtado 18 (Ronda, Granada). Pan, bollería, tartaletas y tartas por encargo. Valoración 4,9 en Google. De lunes a sábado de 8:00 a 15:00.">
+<meta name="theme-color" content="#6b3f22">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="La Nazarita · Dulces con historia">
+<meta property="og:description" content="Pastelería-Panadería en el barrio de Ronda, Granada. 4,9★ en Google. Encarga tu tarta por WhatsApp.">
+<meta property="og:image" content="img/merengues.webp">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Pastelería-Panadería La Nazarita",
+  "slogan": "Dulces con historia",
+  "telephone": "+34684300617",
+  "image": "img/fachada.webp",
+  "address": {"@type": "PostalAddress","streetAddress": "C. Obispo Hurtado, 18","addressLocality": "Granada","postalCode": "18002","addressRegion": "Granada","addressCountry": "ES"},
+  "geo": {"@type": "GeoCoordinates","latitude": 37.1741569,"longitude": -3.6065452},
+  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens": "08:00","closes": "15:00"}],
+  "aggregateRating": {"@type": "AggregateRating","ratingValue": "4.9","reviewCount": "38"},
+  "paymentAccepted": "Efectivo, tarjeta, pago móvil"
+}
+</script>
+<style>
+:root{
+  --cream:#f5ecd7; --paper:#fbf6ea; --sand:#ecdcbc;
+  --brown:#6b3f22; --brown-2:#8a4f24; --ink:#2e1c12; --muted:#6e5a4a;
+  --terra:#b5652d; --pome:#9e2b2b; --gold:#c9a24a; --green:#2f7d4f;
+  --radius:18px; --shadow:0 18px 40px -18px rgba(70,38,16,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:Jost,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;color:var(--brown)}
+h2{font-size:clamp(2.1rem,4.5vw,3.2rem)}
+.eyebrow{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);font-weight:600;display:flex;align-items:center;gap:.7em}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.lead{color:var(--muted);font-size:1.08rem;max-width:58ch}
+
+/* Nasrid star pattern */
+.pattern{background-color:var(--cream);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23c9a24a' stroke-opacity='.28' stroke-width='1.2'%3E%3Cpath d='M40 8l9 23 23 9-23 9-9 23-9-23-23-9 23-9z'/%3E%3Cpath d='M17 17h46v46H17z' transform='rotate(45 40 40)'/%3E%3Cpath d='M17 17h46v46H17z'/%3E%3C/g%3E%3C/svg%3E")}
+
+/* Top status bar */
+.topbar{background:var(--brown);color:#f8ead0;font-size:.88rem}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0;flex-wrap:wrap}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:500}
+.dot{width:9px;height:9px;border-radius:50%;background:#e0b04a;box-shadow:0 0 0 0 rgba(120,220,150,.7)}
+.dot.open{background:#5fd18b;animation:pulse 2s infinite}
+.dot.closed{background:#e07a5f}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(95,209,139,0)}100%{box-shadow:0 0 0 0 rgba(95,209,139,0)}}
+.topbar a{text-decoration:none;opacity:.9}
+.topbar a:hover{opacity:1;text-decoration:underline}
+
+/* Nav */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(251,246,234,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(107,63,34,.12)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:44px;height:44px;flex:none}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:1.65rem;color:var(--brown);letter-spacing:.06em;line-height:1}
+.brand small{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--terra);font-size:1rem;letter-spacing:.02em}
+nav.links{display:flex;gap:28px;align-items:center}
+nav.links a{text-decoration:none;font-weight:500;color:var(--brown);font-size:.98rem}
+nav.links a:hover{color:var(--terra)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font:inherit;font-weight:600;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#1f8f4e;color:#fff;box-shadow:0 10px 24px -10px rgba(31,143,78,.7)}
+.btn-wa:hover{background:#18793f}
+.btn-ghost{background:transparent;color:var(--brown);border:1.5px solid var(--brown)}
+.btn-ghost:hover{background:var(--brown);color:var(--paper)}
+.btn svg{width:20px;height:20px;flex:none}
+.nav .btn{padding:10px 18px;font-size:.92rem}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2px;background:var(--brown);margin:5px 0;transition:.3s}
+
+/* Hero */
+.hero{position:relative;padding:64px 0 90px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.1rem);margin:18px 0 20px;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--pome)}
+.hero .lead{font-size:1.15rem}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0 30px}
+.rating{display:flex;align-items:center;gap:14px;background:var(--paper);border:1px solid rgba(107,63,34,.15);border-radius:14px;padding:12px 18px;width:fit-content;box-shadow:var(--shadow);text-decoration:none}
+.stars{color:#e3a521;letter-spacing:2px;font-size:1.1rem}
+.rating strong{font-size:1.5rem;font-family:"Cormorant Garamond",serif;color:var(--brown)}
+.rating span{font-size:.88rem;color:var(--muted);line-height:1.3}
+.hero-art{position:relative}
+.arch{border-radius:300px 300px var(--radius) var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;border:6px solid var(--paper);outline:1px solid var(--gold)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.badge-float{position:absolute;left:-28px;bottom:42px;background:var(--paper);border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;max-width:240px}
+.badge-float .ic{width:44px;height:44px;border-radius:12px;background:var(--cream);display:grid;place-items:center;font-size:1.4rem;flex:none}
+.badge-float b{display:block;color:var(--brown);font-size:.95rem}
+.badge-float small{color:var(--muted);font-size:.82rem}
+.seal{position:absolute;top:-14px;right:-10px;width:120px;height:120px;animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Trust strip */
+.trust{background:var(--brown);color:#f6e6c8}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:28px 0}
+.trust div{display:flex;gap:14px;align-items:center}
+.trust .n{font-family:"Cormorant Garamond",serif;font-size:2.1rem;color:var(--gold);line-height:1}
+.trust p{font-size:.92rem;line-height:1.35}
+
+section{padding:100px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px;flex-wrap:wrap}
+.head h2{margin-top:12px}
+
+/* Products */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:0 2px 0 rgba(107,63,34,.06);border:1px solid rgba(107,63,34,.1);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--sand)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .ph img{transform:scale(1.06)}
+.card .bd{padding:22px 24px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.65rem}
+.card p{color:var(--muted);font-size:.98rem;flex:1}
+.tag{font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--pome);background:#f6e3dc;padding:4px 10px;border-radius:999px;width:fit-content}
+.card a.mini{font-weight:600;color:var(--terra);text-decoration:none;font-size:.95rem;margin-top:6px}
+.card a.mini:hover{text-decoration:underline}
+.card.illu .ph{display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#fff6e4,var(--sand))}
+.card.illu .ph svg{width:46%;height:auto}
+
+/* Order section */
+.order{background:var(--brown);color:#f6e6c8;position:relative;overflow:hidden}
+.order::after{content:"";position:absolute;inset:0;opacity:.09;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23fff' stroke-width='1.2'%3E%3Cpath d='M40 8l9 23 23 9-23 9-9 23-9-23-23-9 23-9z'/%3E%3Cpath d='M17 17h46v46H17z' transform='rotate(45 40 40)'/%3E%3Cpath d='M17 17h46v46H17z'/%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
+.order .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:center}
+.order h2{color:#fff}
+.order .eyebrow{color:var(--gold)}
+.order .lead{color:#e9d6b6}
+.steps{list-style:none;margin-top:30px;display:grid;gap:18px}
+.steps li{display:flex;gap:16px;align-items:flex-start}
+.steps .k{flex:none;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--gold);color:var(--gold);display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-size:1.3rem;font-weight:700}
+.steps b{color:#fff;display:block}
+.steps span{color:#e2cdaa;font-size:.95rem}
+form.box{background:var(--paper);color:var(--ink);border-radius:22px;padding:34px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45)}
+form.box h3{font-size:2rem;margin-bottom:4px}
+form.box .sub{color:var(--muted);font-size:.95rem;margin-bottom:22px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-size:.85rem;font-weight:600;color:var(--brown);margin-bottom:14px}
+input,select,textarea{display:block;width:100%;margin-top:6px;padding:13px 14px;border-radius:12px;border:1.5px solid #e2d3b7;background:#fff;font:inherit;font-size:1rem;color:var(--ink);transition:border .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--terra)}
+textarea{resize:vertical;min-height:84px}
+form.box .btn{width:100%;margin-top:6px;padding:16px}
+.note{font-size:.82rem;color:var(--muted);text-align:center;margin-top:12px}
+
+/* Story */
+.story .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.story-img{position:relative}
+.story-img .main{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:3/4}
+.story-img .main img{width:100%;height:100%;object-fit:cover}
+.story-img .stamp{position:absolute;right:-22px;bottom:-22px;background:var(--pome);color:#fff;border-radius:50%;width:132px;height:132px;display:grid;place-items:center;text-align:center;font-family:"Cormorant Garamond",serif;font-size:1.15rem;line-height:1.1;box-shadow:var(--shadow);border:4px solid var(--paper)}
+.story p+p{margin-top:16px}
+.story .quote{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.7rem;color:var(--brown);border-left:3px solid var(--gold);padding-left:20px;margin:28px 0;line-height:1.3}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.values div{background:var(--cream);border-radius:14px;padding:18px}
+.values b{display:block;color:var(--brown);font-family:"Cormorant Garamond",serif;font-size:1.3rem}
+.values span{font-size:.88rem;color:var(--muted)}
+
+/* Reviews */
+.reviews{text-align:center}
+.score{display:inline-flex;flex-direction:column;align-items:center;gap:6px;margin:10px 0 34px}
+.score .big{font-family:"Cormorant Garamond",serif;font-size:6rem;line-height:.9;color:var(--brown);font-weight:700}
+.score .stars{font-size:1.8rem}
+.score small{color:var(--muted)}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left;margin-top:10px}
+.why{background:#fff;border:1px solid rgba(107,63,34,.12);border-radius:var(--radius);padding:28px}
+.why .ic{font-size:1.8rem;margin-bottom:10px}
+.why h3{font-size:1.5rem;margin-bottom:6px}
+.why p{color:var(--muted);font-size:.96rem}
+.reviews .btn{margin-top:36px}
+
+/* Visit */
+.visit .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:stretch}
+.info{background:#fff;border-radius:22px;padding:36px;border:1px solid rgba(107,63,34,.12);box-shadow:var(--shadow)}
+.info h2{margin:10px 0 24px}
+.line{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed #e2d3b7}
+.line:last-of-type{border:0}
+.line .ic{width:42px;height:42px;border-radius:12px;background:var(--cream);display:grid;place-items:center;flex:none;font-size:1.2rem}
+.line b{display:block;color:var(--brown)}
+.line a{color:var(--terra);font-weight:600;text-decoration:none}
+table.hours{width:100%;border-collapse:collapse;margin-top:6px;font-size:.95rem}
+table.hours td{padding:5px 0}
+table.hours td:last-child{text-align:right;color:var(--muted)}
+table.hours tr.today td{color:var(--pome);font-weight:600}
+.services{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.services span{font-size:.8rem;background:var(--cream);color:var(--brown);padding:6px 12px;border-radius:999px}
+.map{border-radius:22px;overflow:hidden;box-shadow:var(--shadow);min-height:420px;position:relative;border:1px solid rgba(107,63,34,.12)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.25) saturate(.9)}
+.info .cta-row{margin:24px 0 0}
+
+/* Final CTA */
+.final{text-align:center;padding:90px 0}
+.final h2{font-size:clamp(2.2rem,5vw,3.6rem);max-width:18ch;margin:14px auto 18px}
+.final .lead{margin-inline:auto}
+.final .cta-row{justify-content:center}
+.final .eyebrow{justify-content:center}
+.final .eyebrow::after{content:"";width:28px;height:1px;background:currentColor}
+
+/* Footer */
+footer{background:var(--ink);color:#d9c6a6;padding:56px 0 26px;font-size:.92rem}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .brand b{color:#f5ecd7}
+footer h4{font-family:"Cormorant Garamond",serif;color:#f5ecd7;font-size:1.3rem;margin-bottom:12px;font-weight:600}
+footer a{text-decoration:none;color:#d9c6a6}
+footer a:hover{color:#fff}
+footer ul{list-style:none;display:grid;gap:6px}
+.powered{text-align:center;margin-top:26px}
+.powered a{display:inline-flex;gap:6px;align-items:center;padding:8px 18px;border:1px solid rgba(255,255,255,.18);border-radius:999px;color:#cdb998;font-size:.85rem;letter-spacing:.04em}
+.powered a b{color:#fff;letter-spacing:.18em}
+.powered a:hover{border-color:var(--gold);color:#fff}
+.credits{text-align:center;margin-top:14px;font-size:.75rem;color:#8d7a62}
+.credits a{color:#a8957c;text-decoration:underline}
+
+/* Floating WhatsApp */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:62px;height:62px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(0,0,0,.4);transition:transform .2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px}
+.wa-float .bubble{position:absolute;right:74px;bottom:12px;background:#fff;color:var(--ink);padding:10px 14px;border-radius:14px 14px 4px 14px;font-size:.88rem;white-space:nowrap;box-shadow:var(--shadow);opacity:0;transform:translateY(6px);transition:.4s;pointer-events:none;font-weight:500}
+.wa-float.show .bubble{opacity:1;transform:none}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.seal,.dot.open{animation:none}html{scroll-behavior:auto}}
+
+/* Responsive */
+@media (max-width:980px){
+  .hero .wrap,.order .wrap,.story .wrap,.visit .wrap{grid-template-columns:1fr;gap:44px}
+  .hero-art{max-width:460px;margin-inline:auto;width:100%}
+  .grid,.review-grid{grid-template-columns:1fr 1fr}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  footer .cols{grid-template-columns:1fr 1fr}
+  .story-img{max-width:440px;margin-inline:auto}
+}
+@media (max-width:820px){
+  nav.links{position:fixed;top:0;right:0;height:100vh;width:min(78vw,320px);background:var(--paper);flex-direction:column;align-items:flex-start;padding:100px 30px 30px;gap:22px;transform:translateX(100%);visibility:hidden;transition:transform .35s,visibility 0s .35s;box-shadow:-20px 0 40px rgba(0,0,0,.15);z-index:-1}
+  nav.links.open{transform:none;visibility:visible;transition:transform .35s}
+  nav.links a{font-size:1.15rem}
+  .burger{display:block;z-index:2}
+  .nav .btn.desk{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  section{padding:70px 0}
+  .hero{padding:40px 0 60px}
+  .grid,.review-grid,.values,.row{grid-template-columns:1fr}
+  .trust .wrap{grid-template-columns:1fr;gap:16px}
+  footer .cols{grid-template-columns:1fr}
+  .badge-float{left:8px;bottom:16px}
+  .seal{width:92px;height:92px;right:0}
+  .story-img .stamp{right:8px;bottom:-18px;width:110px;height:110px;font-size:1rem}
+  form.box,.info{padding:24px}
+  .cta-row .btn{width:100%}
+  .topbar .addr{display:none}
+  .map{min-height:320px}
+  .score .big{font-size:4.6rem}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="status"><span class="dot" id="dot"></span><span id="statusText">Lunes a sábado · 8:00 – 15:00</span></span>
+    <span class="addr">📍 C. Obispo Hurtado, 18 · Barrio de Ronda, Granada</span>
+    <a href="tel:+34684300617">📞 684 30 06 17</a>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="La Nazarita, inicio">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="31" fill="#f5ecd7" stroke="#c9a24a" stroke-width="1.5"/><path d="M26 13h12l-2 6h-8z" fill="#8a4f24"/><path d="M27 13l-3-4 5 2 3-4 3 4 5-2-3 4" fill="#8a4f24"/><circle cx="32" cy="37" r="17" fill="#a33a2c" stroke="#6b3f22" stroke-width="2"/><g fill="#f5d9a8"><circle cx="26" cy="34" r="2.3"/><circle cx="32" cy="31" r="2.3"/><circle cx="38" cy="34" r="2.3"/><circle cx="29" cy="40" r="2.3"/><circle cx="35" cy="40" r="2.3"/><circle cx="32" cy="45.5" r="2.3"/></g></svg>
+      <span><b>LA NAZARITA</b><small>dulces con historia</small></span>
+    </a>
+    <nav class="links" id="menu">
+      <a href="#dulces">Nuestros dulces</a>
+      <a href="#encargos">Encargos</a>
+      <a href="#historia">La casa</a>
+      <a href="#visitanos">Visítanos</a>
+      <a class="btn btn-wa" href="https://wa.me/34684300617?text=Hola%20La%20Nazarita%2C%20me%20gustar%C3%ADa%20hacer%20un%20encargo" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- HERO -->
+<section class="hero pattern">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Pastelería · Panadería · Granada</span>
+      <h1>Dulces con historia, <em>recién hechos</em> en el barrio de Ronda.</h1>
+      <p class="lead">Pan del día, bollería, tartaletas de merengue tostado y tartas por encargo. Encarga hoy por WhatsApp y recógelo sin hacer cola.</p>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/34684300617?text=Hola%20La%20Nazarita%2C%20me%20gustar%C3%ADa%20hacer%20un%20encargo" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.2-.3-.3-.6-.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm0-21.6A11.8 11.8 0 0 0 1.9 17.9L.2 24l6.3-1.6A11.8 11.8 0 1 0 12 .2z"/></svg>
+          Encargar por WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#visitanos">Cómo llegar</a>
+      </div>
+      <a class="rating" href="https://www.google.com/maps/place/?q=place_id:ChIJITQVLgD9cQ0RbSVLxllwbms" target="_blank" rel="noopener">
+        <strong>4,9</strong>
+        <div><div class="stars">★★★★★</div><span>38 opiniones en Google<br>Entre las mejor valoradas de Granada</span></div>
+      </a>
+    </div>
+    <div class="hero-art rv">
+      <div class="arch"><img src="img/merengues.webp" alt="Bandeja de tartaletas de merengue tostado en el obrador de La Nazarita" fetchpriority="high"></div>
+      <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><path id="c" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs>
+        <circle cx="60" cy="60" r="58" fill="#9e2b2b"/>
+        <text font-family="Jost" font-size="11.5" letter-spacing="3.2" fill="#f5ecd7" font-weight="600"><textPath href="#c">HECHO EN GRANADA · DULCES CON HISTORIA ·</textPath></text>
+        <g transform="translate(46 44) scale(.45)"><path d="M26 13h12l-2 6h-8z" fill="#f5ecd7"/><circle cx="32" cy="37" r="17" fill="#f5ecd7"/></g>
+      </svg>
+      <div class="badge-float">
+        <div class="ic">🥐</div>
+        <div><b>Abrimos a las 8:00</b><small>Pan y bollería para el desayuno</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap">
+    <div><span class="n">4,9★</span><p>Valoración media<br>en Google</p></div>
+    <div><span class="n">6</span><p>días a la semana<br>de lunes a sábado</p></div>
+    <div><span class="n">8:00</span><p>abrimos temprano<br>para tu desayuno</p></div>
+    <div><span class="n">♿</span><p>Local accesible · tarjeta<br>y pago con el móvil</p></div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section id="dulces">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="eyebrow">Nuestro mostrador</span><h2>Lo que te espera cada mañana</h2></div>
+      <p class="lead">Del horno al mostrador. Pregunta por lo del día o encárgalo con antelación y te lo tenemos preparado.</p>
+    </div>
+    <div class="grid">
+      <article class="card rv">
+        <div class="ph"><img src="img/merengues.webp" alt="Tartaletas de merengue tostado" loading="lazy"></div>
+        <div class="bd"><span class="tag">La favorita</span><h3>Tartaletas de merengue</h3><p>Base crujiente y merengue tostado a soplete, una a una. Las que ves en el escaparate.</p><a class="mini" href="#encargos" data-prod="Tartaletas de merengue">Encargar bandeja →</a></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/pan.jpg" alt="Hogaza de pan artesano de corteza dorada" loading="lazy"></div>
+        <div class="bd"><span class="tag">Cada día</span><h3>Pan del día</h3><p>Corteza que cruje y miga tierna. Resérvalo y pásate a recogerlo a la hora que te venga bien.</p><a class="mini" href="#encargos" data-prod="Pan">Reservar pan →</a></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/croissant.jpg" alt="Croissants de mantequilla recién horneados" loading="lazy"></div>
+        <div class="bd"><span class="tag">Desayunos</span><h3>Bollería</h3><p>Croissants, napolitanas y bollos para empezar el día. Ideal para llevar a la oficina o a casa.</p><a class="mini" href="#encargos" data-prod="Bollería">Pedir para un grupo →</a></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/tarta.jpg" alt="Porción de tarta de chocolate" loading="lazy"></div>
+        <div class="bd"><span class="tag">Por encargo</span><h3>Tartas de celebración</h3><p>Cumpleaños, comuniones, aniversarios… Cuéntanos la ocasión y el número de personas.</p><a class="mini" href="#encargos" data-prod="Tarta de celebración">Encargar tarta →</a></div>
+      </article>
+      <article class="card rv">
+        <div class="ph"><img src="img/torrija.jpg" alt="Torrija con azúcar, dulce de temporada" loading="lazy"></div>
+        <div class="bd"><span class="tag">Temporada</span><h3>Dulces de temporada</h3><p>Lo que pide cada época del año, hecho como siempre. Pregunta qué tenemos esta semana.</p><a class="mini" href="#encargos" data-prod="Dulces de temporada">Preguntar →</a></div>
+      </article>
+      <article class="card illu rv">
+        <div class="ph">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M26 13h12l-2 6h-8z" fill="#8a4f24"/><path d="M27 13l-3-4 5 2 3-4 3 4 5-2-3 4" fill="#8a4f24"/><circle cx="32" cy="37" r="17" fill="#a33a2c" stroke="#6b3f22" stroke-width="2"/><g fill="#f5d9a8"><circle cx="26" cy="34" r="2.3"/><circle cx="32" cy="31" r="2.3"/><circle cx="38" cy="34" r="2.3"/><circle cx="29" cy="40" r="2.3"/><circle cx="35" cy="40" r="2.3"/><circle cx="32" cy="45.5" r="2.3"/></g></svg>
+        </div>
+        <div class="bd"><span class="tag">Para regalar</span><h3>Bandejas y detalles</h3><p>Surtidos de dulces para visitas, reuniones o para quedar bien. Te los preparamos a tu gusto.</p><a class="mini" href="#encargos" data-prod="Bandeja surtida">Montar mi bandeja →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER -->
+<section class="order" id="encargos">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Encargos sin esperas</span>
+      <h2>Tu pedido, listo cuando llegues.</h2>
+      <p class="lead">Rellena estos datos y se nos abre un WhatsApp con tu pedido ya escrito. Sin llamadas, sin colas y sin quedarte sin tu tarta.</p>
+      <ol class="steps">
+        <li><span class="k">1</span><div><b>Elige qué quieres</b><span>Tarta, bandeja, pan o bollería: tú decides cantidad y día.</span></div></li>
+        <li><span class="k">2</span><div><b>Envíalo por WhatsApp</b><span>Te confirmamos el pedido y resolvemos cualquier duda.</span></div></li>
+        <li><span class="k">3</span><div><b>Recoge en tienda</b><span>C. Obispo Hurtado, 18. De lunes a sábado de 8:00 a 15:00.</span></div></li>
+      </ol>
+    </div>
+    <form class="box rv" id="orderForm" novalidate>
+      <h3>Hacer un encargo</h3>
+      <p class="sub">Tarda menos de un minuto.</p>
+      <div class="row">
+        <label>Tu nombre<input name="nombre" required autocomplete="name" placeholder="María"></label>
+        <label>¿Qué te apetece?
+          <select name="producto" id="producto">
+            <option>Tarta de celebración</option>
+            <option>Tartaletas de merengue</option>
+            <option>Bandeja surtida</option>
+            <option>Pan</option>
+            <option>Bollería</option>
+            <option>Dulces de temporada</option>
+            <option>Otro</option>
+          </select>
+        </label>
+      </div>
+      <div class="row">
+        <label>Día de recogida<input type="date" name="fecha" id="fecha" required></label>
+        <label>Cantidad / personas<input name="cantidad" placeholder="Ej.: 12 personas"></label>
+      </div>
+      <label>Detalles (sabor, mensaje, alergias…)<textarea name="detalles" placeholder="Ej.: Tarta de chocolate con «Feliz cumple, Lucía»"></textarea></label>
+      <button class="btn btn-wa" type="submit">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.2-.3-.3-.6-.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm0-21.6A11.8 11.8 0 0 0 1.9 17.9L.2 24l6.3-1.6A11.8 11.8 0 1 0 12 .2z"/></svg>
+        Enviar encargo por WhatsApp
+      </button>
+      <p class="note">¿Prefieres llamar? <a href="tel:+34684300617" style="color:var(--terra);font-weight:600">684 30 06 17</a></p>
+    </form>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story pattern" id="historia">
+  <div class="wrap">
+    <div class="story-img rv">
+      <div class="main"><img src="img/fachada.webp" alt="Fachada de la Pastelería-Panadería La Nazarita en la calle Obispo Hurtado" loading="lazy"></div>
+      <div class="stamp">Barrio<br>de Ronda<br>· Granada ·</div>
+    </div>
+    <div class="rv">
+      <span class="eyebrow">La casa</span>
+      <h2>Una pastelería de barrio con alma granadina</h2>
+      <p class="quote">«Dulces con historia»: así lo pone en nuestra fachada, y así lo hacemos cada día.</p>
+      <p>La Nazarita toma su nombre del reino nazarí que levantó la Alhambra, y su símbolo es la granada, la fruta que da nombre a la ciudad. Detrás del mostrador de la calle Obispo Hurtado hay algo muy sencillo: hacer las cosas bien y tratar a cada cliente como a un vecino.</p>
+      <p>Cada mañana preparamos pan, bollería y dulces para que tu desayuno, tu merienda o tu celebración salgan como tienen que salir.</p>
+      <div class="values">
+        <div><b>Del día</b><span>Lo que ves en la vitrina es de hoy.</span></div>
+        <div><b>De barrio</b><span>Trato cercano, como siempre.</span></div>
+        <div><b>Por encargo</b><span>Lo preparamos a tu medida.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="wrap">
+    <span class="eyebrow" style="justify-content:center">Lo que dicen nuestros clientes</span>
+    <h2 style="margin-top:12px">Granada ya nos ha probado</h2>
+    <div class="score rv">
+      <span class="big">4,9</span>
+      <span class="stars">★★★★★</span>
+      <small>Media de 38 opiniones verificadas en Google</small>
+    </div>
+    <div class="review-grid">
+      <div class="why rv"><div class="ic">🍰</div><h3>Sabor de verdad</h3><p>Dulces hechos con mimo, con el sabor de los de toda la vida.</p></div>
+      <div class="why rv"><div class="ic">🤝</div><h3>Trato de barrio</h3><p>Te atendemos con una sonrisa y te aconsejamos según lo que buscas.</p></div>
+      <div class="why rv"><div class="ic">⏱️</div><h3>Rápido y cómodo</h3><p>Visita rápida, pago con tarjeta o móvil y encargos listos al llegar.</p></div>
+    </div>
+    <a class="btn btn-ghost" href="https://www.google.com/maps/place/?q=place_id:ChIJITQVLgD9cQ0RbSVLxllwbms" target="_blank" rel="noopener">Leer las opiniones en Google →</a>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="visit pattern" id="visitanos">
+  <div class="wrap">
+    <div class="info rv">
+      <span class="eyebrow">Visítanos</span>
+      <h2>Te esperamos en Ronda</h2>
+      <div class="line"><div class="ic">📍</div><div><b>Dirección</b>C. Obispo Hurtado, 18 · 18002 Granada<br><a href="https://www.google.com/maps/dir/?api=1&destination=37.1741569,-3.6065452" target="_blank" rel="noopener">Abrir ruta en Google Maps →</a></div></div>
+      <div class="line"><div class="ic">📞</div><div><b>Teléfono y WhatsApp</b><a href="tel:+34684300617">684 30 06 17</a></div></div>
+      <div class="line"><div class="ic">🕗</div><div style="flex:1"><b>Horario</b>
+        <table class="hours" id="hours">
+          <tr data-d="1"><td>Lunes</td><td>8:00 – 15:00</td></tr>
+          <tr data-d="2"><td>Martes</td><td>8:00 – 15:00</td></tr>
+          <tr data-d="3"><td>Miércoles</td><td>8:00 – 15:00</td></tr>
+          <tr data-d="4"><td>Jueves</td><td>8:00 – 15:00</td></tr>
+          <tr data-d="5"><td>Viernes</td><td>8:00 – 15:00</td></tr>
+          <tr data-d="6"><td>Sábado</td><td>8:00 – 15:00</td></tr>
+          <tr data-d="0"><td>Domingo</td><td>Cerrado</td></tr>
+        </table>
+      </div></div>
+      <div class="services"><span>🛍️ Para llevar</span><span>♿ Accesible</span><span>💳 Tarjeta</span><span>📱 Pago móvil</span><span>⚡ Visita rápida</span></div>
+    </div>
+    <div class="map rv">
+      <iframe title="Mapa de La Nazarita en Granada" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=37.1741569,-3.6065452&z=17&hl=es&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap rv">
+    <span class="eyebrow">¿Una celebración a la vista?</span>
+    <h2>Que no se te escape la tarta de este fin de semana.</h2>
+    <p class="lead">Los encargos con antelación tienen preferencia. Escríbenos y lo dejamos apuntado hoy mismo.</p>
+    <div class="cta-row">
+      <a class="btn btn-wa" href="https://wa.me/34684300617?text=Hola%20La%20Nazarita%2C%20quiero%20encargar%20una%20tarta" target="_blank" rel="noopener">Encargar ahora por WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:+34684300617">Llamar al 684 30 06 17</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="#inicio">
+          <svg viewBox="0 0 64 64" aria-hidden="true" style="width:44px;height:44px"><circle cx="32" cy="32" r="31" fill="#f5ecd7"/><path d="M26 13h12l-2 6h-8z" fill="#8a4f24"/><path d="M27 13l-3-4 5 2 3-4 3 4 5-2-3 4" fill="#8a4f24"/><circle cx="32" cy="37" r="17" fill="#a33a2c" stroke="#6b3f22" stroke-width="2"/><g fill="#f5d9a8"><circle cx="26" cy="34" r="2.3"/><circle cx="32" cy="31" r="2.3"/><circle cx="38" cy="34" r="2.3"/><circle cx="29" cy="40" r="2.3"/><circle cx="35" cy="40" r="2.3"/><circle cx="32" cy="45.5" r="2.3"/></g></svg>
+          <span><b>LA NAZARITA</b><small>dulces con historia</small></span>
+        </a>
+        <p style="margin-top:16px;max-width:36ch">Pastelería-Panadería en el barrio de Ronda, Granada. Pan, bollería, dulces y tartas por encargo.</p>
+      </div>
+      <div><h4>Visítanos</h4><ul><li>C. Obispo Hurtado, 18</li><li>18002 Granada</li><li><a href="tel:+34684300617">684 30 06 17</a></li></ul></div>
+      <div><h4>Horario</h4><ul><li>Lunes a sábado</li><li>8:00 – 15:00</li><li>Domingo cerrado</li></ul></div>
+    </div>
+    <div class="powered"><a href="#" aria-label="Powered by Velnox">Powered by <b>VELNOX</b></a></div>
+    <div class="credits">Fotografías del local: La Nazarita. Otras fotografías vía Wikimedia Commons: croissants de Herry Wibisono (CC0), pan de Nutrition, Food Safety &amp; Health (CC0), tarta de Daria Yakovleva (CC0) y torrija de <a href="https://commons.wikimedia.org/wiki/File:Torrija_con_az%C3%BAcar.jpg" target="_blank" rel="noopener">Javier Lastras (CC BY 2.0)</a>.</div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="https://wa.me/34684300617?text=Hola%20La%20Nazarita%2C%20me%20gustar%C3%ADa%20hacer%20un%20encargo" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <span class="bubble">¿Te guardamos algo? 🥐</span>
+  <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.2-.3-.3-.6-.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm0-21.6A11.8 11.8 0 0 0 1.9 17.9L.2 24l6.3-1.6A11.8 11.8 0 1 0 12 .2z"/></svg>
+</a>
+
+<script>
+(function(){
+  const PHONE = '34684300617';
+  const OPEN = 8*60, CLOSE = 15*60; // Lunes a sábado
+  const DAYS = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+
+  // Hora de Granada (Europe/Madrid) sea cual sea la zona del visitante
+  function madridNow(){
+    const p = new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Madrid',weekday:'short',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());
+    const get = t => p.find(x=>x.type===t).value;
+    const wd = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(get('weekday'));
+    return {d:wd, m:parseInt(get('hour'),10)*60+parseInt(get('minute'),10)};
+  }
+  function updateStatus(){
+    const {d,m} = madridNow();
+    const dot = document.getElementById('dot'), txt = document.getElementById('statusText');
+    const openDay = d !== 0;
+    if(openDay && m >= OPEN && m < CLOSE){
+      const left = CLOSE - m;
+      dot.className = 'dot open';
+      txt.textContent = left <= 60 ? `Abierto ahora · cierra en ${left} min` : 'Abierto ahora · hasta las 15:00';
+    } else {
+      dot.className = 'dot closed';
+      let next;
+      if(openDay && m < OPEN) next = 'hoy a las 8:00';
+      else { const nd = d === 6 ? 1 : (d+1)%7; next = (nd === (d+1)%7 ? 'mañana' : 'el ' + DAYS[nd]) + ' a las 8:00'; }
+      txt.textContent = `Cerrado · abrimos ${next} · encarga ya por WhatsApp`;
+    }
+    document.querySelectorAll('#hours tr').forEach(tr=>tr.classList.toggle('today', +tr.dataset.d === d));
+  }
+  updateStatus(); setInterval(updateStatus, 60000);
+
+  // Menú móvil
+  const burger = document.getElementById('burger'), menu = document.getElementById('menu');
+  burger.addEventListener('click',()=>{const o = menu.classList.toggle('open'); burger.setAttribute('aria-expanded',o);});
+  menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');burger.setAttribute('aria-expanded',false);}));
+
+  // Fecha mínima = hoy; preseleccionar producto desde las tarjetas
+  const fecha = document.getElementById('fecha');
+  const t = new Date(); t.setMinutes(t.getMinutes()-t.getTimezoneOffset());
+  fecha.min = t.toISOString().slice(0,10);
+  document.querySelectorAll('[data-prod]').forEach(a=>a.addEventListener('click',()=>{
+    const sel = document.getElementById('producto');
+    [...sel.options].forEach(o=>{ if(o.text === a.dataset.prod) sel.value = o.text; });
+  }));
+
+  // Formulario → WhatsApp
+  document.getElementById('orderForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    const f = e.target, v = n => (f.elements[n].value||'').trim();
+    if(!v('nombre')){ f.elements.nombre.focus(); f.elements.nombre.style.borderColor='#c0392b'; return; }
+    if(!v('fecha')){ f.elements.fecha.focus(); f.elements.fecha.style.borderColor='#c0392b'; return; }
+    const d = new Date(v('fecha')+'T12:00:00');
+    if(d.getDay() === 0){ alert('Los domingos estamos cerrados. Elige otro día, por favor.'); f.elements.fecha.focus(); return; }
+    const fechaTxt = d.toLocaleDateString('es-ES',{weekday:'long',day:'numeric',month:'long'});
+    let msg = `¡Hola, La Nazarita! Soy ${v('nombre')} y me gustaría hacer un encargo:%0A%0A`;
+    const lines = [`🧁 *Producto:* ${v('producto')}`, `📅 *Recogida:* ${fechaTxt}`];
+    if(v('cantidad')) lines.push(`👥 *Cantidad:* ${v('cantidad')}`);
+    if(v('detalles')) lines.push(`📝 *Detalles:* ${v('detalles')}`);
+    msg += lines.map(encodeURIComponent).join('%0A') + '%0A%0A' + encodeURIComponent('¡Gracias!');
+    window.open(`https://wa.me/${PHONE}?text=${msg}`,'_blank','noopener');
+  });
+
+  // Animaciones al hacer scroll
+  const io = new IntersectionObserver(es=>es.forEach(x=>{ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target);} }),{threshold:.12});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+  // Burbuja del botón flotante
+  const wa = document.getElementById('waFloat');
+  setTimeout(()=>{wa.classList.add('show'); setTimeout(()=>wa.classList.remove('show'),6000);}, 4000);
+})();
+</script>
+</body>
+</html>
